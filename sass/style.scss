@@ -24,11 +24,27 @@ body {
   max-width: 1140px;
   padding: 10px 10px;
   margin: 0 auto;
-  border: 2px solid red;
 }
 
 .section {
   padding: 96px 0;
+}
+
+.section-title{
+    position: relative;
+    font-family: $font-text;
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.title p {
+    font-size: 20px;
+    font-family: $font-text-two;
+    font-style: italic;
+    color: silver;
+    margin-top: 5px;
 }
 
 /*header*/
@@ -136,17 +152,6 @@ i {
     margin-bottom: 40px;
 }
 
-.section-title{
-    position: relative;
-    font-family: $font-text;
-    font-weight: 100;
-    font-size: 40px;
-}
-
-.title p {
-    font-size: 20px;
-    font-family: $font-text-two;
-}
 
 .row {
     display:flex;
@@ -200,7 +205,7 @@ i {
 
 .portfolio {
   min-height: 600px;
-  background-color: silver;
+  background-color: #F8F9F9;
 }
 
 .general-portfolio {
