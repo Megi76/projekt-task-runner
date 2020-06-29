@@ -1,13 +1,13 @@
 /*variables*/
-$font-text: 'Merriweather', serif;
+$font-text: 'Spartan', sans-serif;
 $font-text-two: 'BenchNine', sans-serif;
-$font-header:'Montserrat', sans-serif;
-$color-main: #0CBD9F;
+$font-header: 'Libre Franklin', sans-serif;
+$color-main: #f5cb42;
 $color-background: #F5F5F5;
 
 /*Global*/
 *, *::before, *::after {
-        box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -27,4 +27,88 @@ body {
 
 .section {
   padding: 96px 0;
+}
+
+/*header*/
+.btn {
+    display: inline-block;
+    min-width: 100px;
+    margin: 28px auto 0 auto;
+    padding: 12px;
+    font-family:$font-text;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-width: 2px;
+    background-color: $color-main;
+    background-position: 100% 0;
+    background-size: 300%;
+    color: white;
+}
+.splash { /*element rodzic dla calej sekcji header */
+    background-image: url('https://images.pexels.com/photos/238230/pexels-photo-238230.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');
+    background-size: cover;
+    color: white;
+    height: 600px;
+}
+
+.splash-iner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.links {
+  padding-left: 0;
+}
+
+/*splash czesc gorna*/
+
+.header { /*h3 w gornej czesci*/
+    font-size: 18px;
+    font-family: $font-header;
+    font-weight: 500;
+    color: #f5cb42;
+}
+
+.links li {
+    list-style-type: none;
+    display: inline;
+    position: relative;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.links i {
+    font-size: 15px;
+}
+
+/*splash czesc dolna*/
+
+.splash-iner-2 {
+    text-align: center;
+    margin: 150px 0;
+}
+
+.splash-iner-2 h1 {
+    font-family: $font-text;
+    font-weight: 50;
+    font-style: italic;
+}
+
+.splash-iner-2 p{
+    font-size: 50px;
+    font-family:$font-text-two;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
 }
