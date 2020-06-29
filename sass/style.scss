@@ -4,3 +4,27 @@ $font-text-two: 'BenchNine', sans-serif;
 $font-header:'Montserrat', sans-serif;
 $color-main: #0CBD9F;
 $color-background: #F5F5F5;
+
+/*Global*/
+*, *::before, *::after {
+        box-sizing: border-box;
+}
+
+body {
+  margin: none;
+  font-size: 16px;
+  color: black;
+  font-family: $font-text-two;
+  background-color: white;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 20px 20px;
+  margin: 0 auto;
+  border: none;
+}
+
+.section {
+  padding: 96px 0;
+}
